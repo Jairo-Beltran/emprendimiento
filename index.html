@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fire Art</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="arte digital, ilustración, galería, NFT, creatividad" name="keywords">
+  <meta content="Explora una colección de arte digital creada por artistas visionarios. Descubre ilustraciones, animaciones y arte conceptual." name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+:root {
+  --bs-primary: #ff7b00 !important;
+  --bs-primary-rgb: 255, 123, 0;
+}
+
+.text-primary {
+  color: #ff7b00 !important;
+}
+
+.btn-outline-primary {
+  color: #ff7b00;
+  border-color: #ff7b00;
+}
+
+.btn-outline-primary:hover,
+.btn-primary {
+  background-color: #ff7b00;
+  border-color: #ff7b00;
+  color: #fff;
+}
+
+.border-primary {
+  border-color: #ff7b00 !important;
+}
+
+.bg-primary {
+  background-color: #ff7b00 !important;
+}
+</style>
+
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Cargando...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <h2 class="mb-0 text-primary text-uppercase"><i class="fa-solid fa-palette me-1"></i>Fire Art</h2>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Inicio</a>
+          <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+          <a href="gallery.html" class="nav-item nav-link">Galería</a>
+          <a href="artists.html" class="nav-item nav-link">Artistas</a>
+          <a href="contact.html" class="nav-item nav-link">Contacto</a>
+        </div>
+        <div class="d-none d-lg-flex">
+          <a class="btn btn-outline-primary border-2" href="#gallery">Explorar</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="img/93e6cb52-4584-489f-87c9-f7f6bf070035.jpeg" alt="Arte digital abstracto colorido">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="title mx-5 px-5 animated slideInDown">
+              <div class="title-center">
+                <h5>Bienvenido a Fire Art</h5>
+                <h1 class="display-1">Explora el Arte Digital</h1>
+              </div>
+            </div>
+            <p class="fs-5 mb-5 animated slideInDown">Una galería virtual donde la creatividad no tiene límites.  
+              <br> Descubre ilustraciones, servicios de diseños y animaciones únicas.</p>
+            <a href="#gallery" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Ver Galería</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="img/1.png" alt="Obra digital futurista">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="title mx-5 px-5 animated slideInDown">
+              <div class="title-center">
+                <h5>Imaginación sin límites</h5>
+                <h1 class="display-1">Creatividad & Tecnología</h1>
+              </div>
+            </div>
+            <p class="fs-5 mb-5 animated slideInDown">Fusionamos arte y tecnología para crear experiencias visuales inmersivas.</p>
+            <a href="#artists" class="btn btn-outline-primary border-2 py-3 px-5 animated slideInDown">Conocer Artistas</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid bg-secondary">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7 pb-0 pb-lg-5 py-5">
+          <div class="pb-0 pb-lg-5 py-5">
+            <div class="title wow fadeInUp" data-wow-delay="0.1s">
+              <div class="title-left">
+                <h5>Nuestra Visión</h5>
+                <h1>Inspiramos a través del Arte Digital</h1>
+              </div>
+            </div>
+            <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">Fire Art es un proyecto dedicada a exhibir el talento de artistas digitales. 
+              Celebramos la fusión entre creatividad, innovación y tecnología en todas sus formas visuales.</p>
+            <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
+              <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                <i class="fa fa-check-circle text-primary me-1"></i> Ilustraciones digitales y arte conceptual.
+              </li>
+              <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                <i class="fa fa-check-circle text-primary me-1"></i> Obras interactivas y experiencias inmersivas.
+              </li>
+              <li class="list-group-item bg-dark text-body border-secondary ps-0">
+                <i class="fa fa-check-circle text-primary me-1"></i> servicios de diseños a empresas.
+              </li>
+            </ul>
+            <div class="row wow fadeInUp" data-wow-delay="0.4s">
+              <div class="col-6">
+                <a href="#gallery" class="btn btn-outline-primary border-2 py-3 w-100">Explorar Galería</a>
+              </div>
+              <div class="col-6">
+                <a href="#artists" class="btn btn-primary py-3 w-100">Nuestros Artistas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
+          <img class="img-fluid" src="img/ñññ.png" alt="logo facha">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- Gallery Section -->
+<div class="container-fluid py-5" id="gallery">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <div class="title wow fadeInUp" data-wow-delay="0.1s">
+        <div class="title-center">
+          <h5>Galería</h5>
+          <h1>Obras Destacadas</h1>
+        </div>
+      </div>
+      <p class="text-muted">Explora nuestra selección de piezas digitales de nuestros artistas</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <a href="img/qqq.jpeg" data-lightbox="gallery"><img class="img-fluid rounded" src="img/qqq.jpeg" alt="Arte digital 1"></a>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <a href="img/20251208_1625_image.png" data-lightbox="gallery"><img class="img-fluid rounded" src="img/20251208_1625_image.png" alt="Arte digital 2"></a>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <a href="img/unnamed.jpg" data-lightbox="gallery"><img class="img-fluid rounded" src="img/unnamed.jpg" alt="Arte digital 3"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Agrega estos dos enlaces al final del body -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <!-- Gallery End -->
+  <!-- Footer Start -->
+  <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer py-5 position-relative overflow-hidden wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+  <!-- Fondo animado artístico -->
+  <div class="art-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container text-center py-5 position-relative" style="z-index: 2;">
+    <a href="index.html">
+      <h1 class="display-4 mb-3 text-white text-uppercase"><i class="fa-solid fa-palette me-1"></i>Fire Art</h1>
+    </a>
+    <div class="d-flex justify-content-center mb-4">
+      <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© <a class="border-bottom" href="#">Fire Art</a> - Todos los derechos reservados.</p>
+    <p class="mb-0">Diseñado con ❤️ por estudiantes de la Unidad Educativa Juan XXIII</p>
+  </div>
+</div>
+
+<!-- Estilos del fondo animado -->
+<style>
+  .footer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .art-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 1), rgba(10, 10, 10, 1));
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .art-bg span {
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 100, 200, 0.6), transparent 70%);
+    border-radius: 50%;
+    animation: floatArt 20s linear infinite;
+    opacity: 0.4;
+  }
+
+  .art-bg span:nth-child(1) {
+    top: 80%;
+    left: 5%;
+    background: radial-gradient(circle, rgba(0, 200, 255, 0.5), transparent 70%);
+    animation-delay: 0s;
+  }
+
+  .art-bg span:nth-child(2) {
+    top: 60%;
+    left: 60%;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.5), transparent 70%);
+    animation-delay: 4s;
+  }
+
+  .art-bg span:nth-child(3) {
+    top: 40%;
+    left: 30%;
+    background: radial-gradient(circle, rgba(0, 255, 200, 0.5), transparent 70%);
+    animation-delay: 8s;
+  }
+
+  .art-bg span:nth-child(4) {
+    top: 20%;
+    left: 80%;
+    background: radial-gradient(circle, rgba(255, 200, 0, 0.5), transparent 70%);
+    animation-delay: 12s;
+  }
+
+  .art-bg span:nth-child(5) {
+    top: 10%;
+    left: 10%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 70%);
+    animation-delay: 16s;
+  }
+
+  @keyframes floatArt {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-60px) scale(1.3);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+<!-- Footer End -->
+
+  <!-- Footer End -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
