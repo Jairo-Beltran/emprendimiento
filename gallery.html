@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Contacto | Fire Art</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="contacto, arte digital, Fire Art, artistas, creatividad" name="keywords">
-  <meta content="Ponte en contacto con Fire Art para colaborar, aprender o compartir tu arte digital." name="description">
+  <title>Galería | Fire Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="galería, arte digital, Fire Art, artistas, creatividad">
+  <meta name="description" content="Explora la galería de Fire Art: una colección inspiradora de arte digital creado por artistas de todo el mundo.">
 
+  <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon">
 
-  <!-- Fuentes -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -55,6 +56,15 @@
     .bg-primary {
       background-color: #ff7b00 !important;
     }
+
+    .gallery-item img {
+      transition: transform 0.4s ease;
+      border-radius: 10px;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
@@ -77,98 +87,58 @@
         <div class="navbar-nav mx-auto p-4 p-lg-0">
           <a href="index.html" class="nav-item nav-link">Inicio</a>
           <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
-          <a href="index.html#gallery" class="nav-item nav-link">Galería</a>
+          <a href="gallery.html" class="nav-item nav-link active">Galería</a>
           <a href="service.html" class="nav-item nav-link">Servicios</a>
           <a href="team.html" class="nav-item nav-link">Equipo</a>
-          <a href="contact.html" class="nav-item nav-link active">Contacto</a>
+          <a href="contact.html" class="nav-item nav-link">Contacto</a>
         </div>
       </div>
     </nav>
 
     <div class="page-header pb-5">
       <div class="container text-center py-5">
-        <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Contacto</h1>
+        <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Galería</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center text-uppercase mb-0">
             <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
-            <li class="breadcrumb-item text-primary active" aria-current="page">Contacto</li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">Galería</li>
           </ol>
         </nav>
       </div>
     </div>
   </div>
 
-  <!-- Contacto -->
+  <!-- Galería -->
   <div class="container-fluid py-5 bg-secondary">
     <div class="container py-5">
       <div class="text-center mb-5">
-        <h5 class="text-primary">Contáctanos</h5>
-        <h1 class="text-uppercase">Hablemos de tu próximo proyecto</h1>
-        <p class="text-light mt-3">¿Tienes una idea artística o deseas colaborar con nosotros?  
-          Escríbenos y nos pondremos en contacto contigo lo antes posible.</p>
+        <h5 class="text-primary">Explora</h5>
+        <h1 class="text-uppercase">Nuestra Galería de Arte Digital</h1>
+        <p class="text-light mt-3">Una selección de obras creadas por artistas digitales que forman parte de nuestra comunidad Fire Art.</p>
       </div>
 
-      <div class="row g-5 justify-content-center">
-        <div class="col-lg-6">
-          <form id="contactForm">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control bg-dark text-light border-secondary" id="name" placeholder="Tu nombre" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control bg-dark text-light border-secondary" id="email" placeholder="Tu correo" required>
-              </div>
-              <div class="col-12">
-                <input type="text" class="form-control bg-dark text-light border-secondary" id="subject" placeholder="Asunto" required>
-              </div>
-              <div class="col-12">
-                <textarea class="form-control bg-dark text-light border-secondary" id="message" rows="5" placeholder="Tu mensaje" required></textarea>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary py-3 w-100" type="submit">Enviar Mensaje</button>
-              </div>
-            </div>
-          </form>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.1s">
+          <a href="img/gallery-1.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-1.jpg" alt="Obra 1"></a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.2s">
+          <a href="img/gallery-2.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-2.jpg" alt="Obra 2"></a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.3s">
+          <a href="img/gallery-3.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-3.jpg" alt="Obra 3"></a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.4s">
+          <a href="img/gallery-4.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-4.jpg" alt="Obra 4"></a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.5s">
+          <a href="img/gallery-5.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-5.jpg" alt="Obra 5"></a>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp gallery-item" data-wow-delay="0.6s">
+          <a href="img/gallery-6.jpg" data-lightbox="gallery"><img class="img-fluid" src="img/gallery-6.jpg" alt="Obra 6"></a>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Script EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function () {
-      // ⚠️ Reemplaza con tu User ID de EmailJS
-      emailjs.init("b3XA1RL_vLXcTqB7A");
-    })();
-
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (!name || !email || !message) {
-        alert("Por favor, completa todos los campos obligatorios.");
-        return;
-      }
-
-      emailjs.send("service_rjk5pm5", "template_fbqd9iv", {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message: message
-      }).then(function () {
-        alert("¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente. 🎨");
-        document.getElementById("contactForm").reset();
-      }, function (error) {
-        alert("Hubo un error al enviar tu mensaje. Intenta de nuevo más tarde.");
-        console.error("Error:", error);
-      });
-    });
-  </script>
 
   <!-- Footer -->
   <div class="container-fluid bg-dark text-light footer py-5">
@@ -178,6 +148,8 @@
       </a>
       <div class="d-flex justify-content-center mb-4">
         <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-youtube"></i></a>
       </div>
       <p>© 2025 <strong>Fire Art</strong> — Todos los derechos reservados.</p>
       <p class="mb-0">Diseñado con ❤️ por estudiantes de la Unidad Educativa Juan XXIII</p>
@@ -191,5 +163,4 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

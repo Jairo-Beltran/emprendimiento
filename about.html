@@ -3,200 +3,152 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Fire Art - Sobre Nosotros</title>
+  <title>Sobre Nosotros | Fire Art</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="arte digital, galería, fire art, artistas digitales" name="keywords">
-  <meta content="Descubre más sobre Fire Art, una comunidad de artistas digitales que impulsa la creatividad y el arte moderno." name="description">
+  <meta content="Fire Art, arte digital, ilustración, equipo creativo" name="keywords">
+  <meta content="Conoce la historia y el propósito detrás de Fire Art, un espacio donde el arte digital cobra vida." name="description">
 
-  <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon">
 
-  <!-- Google Web Fonts -->
+  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Icon Font Stylesheet -->
+  <!-- Iconos -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Libraries Stylesheet -->
+  <!-- Librerías -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-  <!-- Customized Bootstrap Stylesheet -->
+  <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Template Stylesheet -->
+  <!-- Estilos -->
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bs-primary: #ff7b00 !important;
+      --bs-primary-rgb: 255, 123, 0;
+    }
+
+    .text-primary {
+      color: #ff7b00 !important;
+    }
+
+    .btn-outline-primary {
+      color: #ff7b00;
+      border-color: #ff7b00;
+    }
+
+    .btn-outline-primary:hover,
+    .btn-primary {
+      background-color: #ff7b00;
+      border-color: #ff7b00;
+      color: #fff;
+    }
+
+    .bg-primary {
+      background-color: #ff7b00 !important;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Spinner Start -->
+  <!-- Spinner -->
   <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-      <span class="sr-only">Cargando...</span>
-    </div>
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
   </div>
-  <!-- Spinner End -->
 
-  <!-- Header Start -->
+  <!-- Navbar Global -->
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
       <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h2 class="mb-0 text-primary text-uppercase"><i class="fa-regular fa-fire me-1"></i>Fire Art</h2>
+        <h2 class="mb-0 text-primary text-uppercase"><i class="fa-solid fa-palette me-1"></i>Fire Art</h2>
       </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto p-4 p-lg-0">
           <a href="index.html" class="nav-item nav-link">Inicio</a>
           <a href="about.html" class="nav-item nav-link active">Sobre Nosotros</a>
+          <a href="index.html#gallery" class="nav-item nav-link">Galería</a>
           <a href="service.html" class="nav-item nav-link">Servicios</a>
+          <a href="team.html" class="nav-item nav-link">Equipo</a>
           <a href="contact.html" class="nav-item nav-link">Contacto</a>
         </div>
       </div>
     </nav>
 
+    <!-- Encabezado -->
     <div class="page-header pb-5">
       <div class="container text-center py-5">
         <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Sobre Nosotros</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-            <li class="breadcrumb-item"><a class="text-white" href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
             <li class="breadcrumb-item text-primary active" aria-current="page">Sobre Nosotros</li>
           </ol>
         </nav>
       </div>
     </div>
   </div>
-  <!-- Header End -->
 
-  <!-- About Start -->
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-7 pb-0 pb-lg-5 py-5">
-          <div class="pb-0 pb-lg-5 py-5">
-            <div class="title wow fadeInUp" data-wow-delay="0.1s">
-              <div class="title-left">
-                <h5>Nuestra Historia</h5>
-                <h1>Sobre Fire Art</h1>
-              </div>
-            </div>
-            <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">
-              Fire Art nació con la misión de unir a artistas digitales de todo el mundo, brindando un espacio donde la creatividad y la innovación se encuentren. Promovemos la colaboración, la visibilidad y la inspiración entre artistas de todas las disciplinas.
-            </p>
-            <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
-              <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                <i class="fa fa-check-circle text-primary me-1"></i> Comunidad global de artistas digitales.
-              </li>
-              <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                <i class="fa fa-check-circle text-primary me-1"></i> Promoción y exposición de obras únicas.
-              </li>
-              <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                <i class="fa fa-check-circle text-primary me-1"></i> Inspiración, aprendizaje y crecimiento artístico.
-              </li>
-            </ul>
-            <div class="row wow fadeInUp" data-wow-delay="0.4s">
-              <div class="col-6">
-                <a href="contact.html" class="btn btn-outline-primary border-2 py-3 w-100">Únete a Nosotros</a>
-              </div>
-              <div class="col-6">
-                <a href="gallery.html" class="btn btn-primary py-3 w-100">Explora la Galería</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
-          <img class="img-fluid" src="img/about.png" alt="Sobre Fire Art">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- About End -->
-
-  <!-- Banner Start -->
+  <!-- About Section -->
   <div class="container-fluid py-5 bg-secondary">
-    <div class="container py-5 text-center">
-      <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="title-center">
-          <h5>Suscripción</h5>
-          <h1>¿Quieres recibir novedades de Fire Art?</h1>
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <img src="img/about1.png" class="img-fluid rounded wow fadeInLeft" data-wow-delay="0.2s" alt="Fire Art">
         </div>
-      </div>
-      <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">Suscríbete y sé el primero en conocer nuevos artistas, colecciones y eventos.</p>
-
-      <!-- 🔸 Formulario de suscripción -->
-      <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
-        <input class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5" 
-               type="email" id="emailInput" placeholder="Tu correo electrónico" required>
-        <button type="button" id="subscribeBtn" 
-                class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2" 
-                style="margin-top: 7px;">Suscribirme</button>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+          <h5 class="text-primary">Nuestra Historia</h5>
+          <h1 class="text-uppercase mb-3">Pasión por el Arte Digital</h1>
+          <p>Fire Art nace con el propósito de dar un espacio a artistas digitales que transforman ideas en emociones visuales. Buscamos impulsar la creatividad y la innovación a través del diseño digital, la ilustración y la expresión visual.</p>
+          <p>Nuestro equipo creativo trabaja con pasión para conectar el arte con las personas. Creemos que el arte digital es una poderosa herramienta para inspirar, comunicar y transformar.</p>
+          <a href="index.html#gallery" class="btn btn-outline-primary border-2 py-3 px-4">Explorar Galería</a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- Banner End -->
 
-  <!-- Script de EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function() {
-      // 👇 Reemplaza con tu verdadero User ID desde EmailJS Dashboard
-      emailjs.init("b3XA1RL_vLXcTqB7A");
-    })();
+  <!-- Misión / Visión -->
+  <div class="container py-5">
+    <div class="row g-5 text-center">
+      <div class="col-lg-6">
+        <h3 class="text-primary">Nuestra Misión</h3>
+        <p>Promover el arte digital como una forma de expresión accesible, innovadora y transformadora, apoyando a artistas emergentes y generando una comunidad creativa global.</p>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="text-primary">Nuestra Visión</h3>
+        <p>Ser una referencia en el mundo del arte digital, inspirando a nuevas generaciones a explorar su potencial creativo a través de la tecnología.</p>
+      </div>
+    </div>
+  </div>
 
-    document.getElementById("subscribeBtn").addEventListener("click", function() {
-      const email = document.getElementById("emailInput").value.trim();
-
-      if (!email) {
-        alert("Por favor, ingresa un correo válido.");
-        return;
-      }
-
-      // 👇 Reemplaza con tus IDs reales de servicio y plantilla
-      emailjs.send("service_rjk5pm5", "template_fbqd9iv", {
-        from_email: email
-      }).then(function() {
-        alert("¡Gracias por suscribirte a Fire Art! 🎨");
-        document.getElementById("emailInput").value = "";
-      }, function(error) {
-        alert("Hubo un error al enviar tu suscripción. Intenta de nuevo.");
-        console.error("Error:", error);
-      });
-    });
-  </script>
-
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Footer -->
+  <div class="container-fluid bg-dark text-light footer py-5">
     <div class="container text-center py-5">
       <a href="index.html">
-        <h1 class="display-4 mb-3 text-white text-uppercase"><i class="fa-regular fa-fire me-1"></i>Fire Art</h1>
+        <h1 class="display-4 mb-3 text-white text-uppercase"><i class="fa-solid fa-palette me-1"></i>Fire Art</h1>
       </a>
       <div class="d-flex justify-content-center mb-4">
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-x-twitter"></i></a>
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-youtube"></i></a>
         <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-instagram"></i></a>
       </div>
-      <p>&copy; 2025 <strong>Fire Art</strong>. Todos los derechos reservados.</p>
+      <p>© 2025 <strong>Fire Art</strong> — Todos los derechos reservados.</p>
+      <p class="mb-0">Diseñado con ❤️ por estudiantes de la Unidad Educativa Juan XXIII</p>
     </div>
   </div>
-  <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-  <!-- JavaScript Libraries -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
