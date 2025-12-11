@@ -13,7 +13,9 @@
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
 
   <!-- Iconos -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
@@ -60,7 +62,8 @@
 
 <body>
   <!-- Spinner -->
-  <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div id="spinner"
+    class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
   </div>
 
@@ -104,7 +107,7 @@
       <div class="text-center mb-5">
         <h5 class="text-primary">Contáctanos</h5>
         <h1 class="text-uppercase">Hablemos de tu próximo proyecto</h1>
-        <p class="text-light mt-3">¿Tienes una idea artística o deseas colaborar con nosotros?  
+        <p class="text-light mt-3">¿Tienes una idea artística o deseas colaborar con nosotros?<br>
           Escríbenos y nos pondremos en contacto contigo lo antes posible.</p>
       </div>
 
@@ -113,19 +116,23 @@
           <form id="contactForm">
             <div class="row g-3">
               <div class="col-md-6">
-                <input type="text" class="form-control bg-dark text-light border-secondary" id="name" placeholder="Tu nombre" required>
+                <input type="text" class="form-control bg-dark text-light border-secondary" name="from_name"
+                  placeholder="Tu nombre" required>
               </div>
               <div class="col-md-6">
-                <input type="email" class="form-control bg-dark text-light border-secondary" id="email" placeholder="Tu correo" required>
+                <input type="email" class="form-control bg-dark text-light border-secondary" name="from_email"
+                  placeholder="Tu correo" required>
               </div>
               <div class="col-12">
-                <input type="text" class="form-control bg-dark text-light border-secondary" id="subject" placeholder="Asunto" required>
+                <input type="text" class="form-control bg-dark text-light border-secondary" name="subject"
+                  placeholder="Asunto" required>
               </div>
               <div class="col-12">
-                <textarea class="form-control bg-dark text-light border-secondary" id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                <textarea class="form-control bg-dark text-light border-secondary" name="message" rows="5"
+                  placeholder="Tu mensaje" required></textarea>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary py-3 w-100" type="submit">Enviar Mensaje</button>
+                <button class="btn btn-primary py-3 w-100" type="submit" id="sendButton">Enviar Mensaje</button>
               </div>
             </div>
           </form>
@@ -134,39 +141,31 @@
     </div>
   </div>
 
-  <!-- Script EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     (function () {
-      // ⚠️ Reemplaza con tu User ID de EmailJS
-      emailjs.init("b3XA1RL_vLXcTqB7A");
+      emailjs.init("b3XA1RL_vLXcTqB7A"); // 👈 Tu Public Key (User ID)
     })();
 
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
+    const contactForm = document.getElementById("contactForm");
+    const sendButton = document.getElementById("sendButton");
+
+    contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
+      sendButton.innerText = "Enviando...";
 
-      if (!name || !email || !message) {
-        alert("Por favor, completa todos los campos obligatorios.");
-        return;
-      }
-
-      emailjs.send("service_rjk5pm5", "template_fbqd9iv", {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message: message
-      }).then(function () {
-        alert("¡Gracias por contactarnos! Tu mensaje ha sido enviado correctamente. 🎨");
-        document.getElementById("contactForm").reset();
-      }, function (error) {
-        alert("Hubo un error al enviar tu mensaje. Intenta de nuevo más tarde.");
-        console.error("Error:", error);
-      });
+      emailjs.sendForm("service_rjk5pm5", "template_fbqd9iv", this)
+        .then(() => {
+          alert("✅ ¡Tu mensaje ha sido enviado correctamente! Te contactaremos pronto. 🎨");
+          contactForm.reset();
+          sendButton.innerText = "Enviar Mensaje";
+        }, (error) => {
+          alert("❌ Hubo un error al enviar el mensaje. Intenta de nuevo más tarde.");
+          console.error("Error:", error);
+          sendButton.innerText = "Enviar Mensaje";
+        });
     });
   </script>
 
